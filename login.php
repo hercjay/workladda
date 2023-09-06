@@ -78,9 +78,9 @@
                                     <div class="form-group">
                                         <a href="signup" style="color: green; font-weight: bold;">Create an Account Instead</a>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <a href="forgot-password" style="color: black;">Forgot Password?</a>
-                                    </div>
+                                    </div> -->
                                 </form>
                             </div>
                         </div>

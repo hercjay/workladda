@@ -121,12 +121,16 @@
                                             <input type="lastname" name="lastname" class="form-control" id="lastname" placeholder="lastname" required value="<?php echo (isset($_SESSION['lastname'])) ? $_SESSION['lastname'] : '' ?>">
                                         </div>
                                         <div class="form-group">
+                                            <label for="phone">WhatsApp Phone:</label>
+                                            <input type="phone" name="phone" class="form-control" id="phone" placeholder="+2348163880303" required value="<?php echo (isset($_SESSION['phone'])) ? $_SESSION['phone'] : '' ?>">
+                                        </div>
+                                        <div class="form-group">
                                             <label for="password">Password:</label>
                                             <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="repassword">Confirm Password:</label>
-                                            <input type="repassword" name="repassword" class="form-control" id="repassword" placeholder="Password" required>
+                                            <input type="password" name="repassword" class="form-control" id="repassword" placeholder="Password" required>
                                         </div>
                                         <!-- <div class="form-group" id="picture">
                                             <label for="picture">Photo/Picture <small>(optional)</small>:</label>
@@ -214,7 +218,11 @@
                             </div>
 
                             <div class="col-lg-12 col-sm-10 p-4 justify-content-center">
-                                <button type="submit" class="btn myBtn col-lg-8 col-sm-10" name="signup">Create Account</button> <br/>  <br/><br/>
+                                <button type="submit" class="btn myBtn col-lg-8 col-sm-10" name="signup">Create Account</button> 
+                            </div>
+
+                            <div class="form-group">
+                                <a href="login" style="color: green; font-weight: bold;">Login Instead</a> <br/>  <br/><br/>
                             </div>
 
                         </div>

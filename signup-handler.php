@@ -12,12 +12,14 @@
         $state = $_POST['state'];
         $city = $_POST['city'];
         $service_type = $_POST['service_type'];
+		$phone = $_POST['phone'];
        
 
 		//set the variable in case there is an error that takes the user back to signup page, so the boxes are auto filled
 		$_SESSION['email'] = $email;
 		$_SESSION['firstname'] = $firstname;
 		$_SESSION['lastname'] = $lastname;
+		$_SESSION['phone'] = $phone;
 		
 
         if($password != $repassword || strlen($password)<4){ //check the passwords for match and proper length
@@ -67,12 +69,12 @@
                         // 		'activate_code'=>$code, 'email'=>$email, 'password'=>$password, 'now'=>$now]);
                         
                         $stmt = $conn->prepare("INSERT INTO users (firstname, lastname, online_type, state, city,
-								 service_type, activate_code, email, password, created_on)
+								 service_type, activate_code, email, password, created_on, phone)
                         		 VALUES (:firstname, :lastname, :online_type, :state, :city, :service_type,
-                                  :activate_code, :email, :password, :now)");
+                                  :activate_code, :email, :password, :now, :phone)");
 						$stmt->execute(['firstname'=>$firstname, 'lastname'=>$lastname, 'online_type'=>$online_type,
                          'state'=>$state, 'city'=>$city, 'service_type'=>$service_type, 
-                         'activate_code'=>$code, 'email'=>$email, 'password'=>$password, 'now'=>$now]);
+                         'activate_code'=>$code, 'email'=>$email, 'password'=>$password, 'now'=>$now, 'phone'=>$phone]);
 
 						//obain the id of newly added user
 						$stmt = $conn->prepare("SELECT * FROM users where email = :email");

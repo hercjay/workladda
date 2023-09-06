@@ -46,7 +46,7 @@
 					</div>
 
 					<div class="col-lg-4 col-md-5  shadowCard p-4 m-2">
-						<img src="images/deal.svg" class="img-fluid mb-4 p-2">
+						<img src="images/deal2.svg" class="img-fluid mb-4 p-2">
 						Number of gigs successfully completed in the past 30 days: <h3><strong>267</strong></h3>
 						Total number of gigs successfully completed: <h3><strong>9856</strong></h3>
 					</div>

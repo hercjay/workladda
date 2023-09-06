@@ -163,7 +163,17 @@
 									</div>
 									</div>
 								</div>
-								<a href="#" class="btn myBtn m-2">Make an Offer</a>
+								<?php if(isset($_SESSION['current_user']) &&  $this_user['id'] !=  $_SESSION['current_user']['id']){ ?>
+									<div class="card-footer d-flex justify-content-center align-items-center">
+									<a href="https://wa.me/<?php echo $this_user['phone']?>" class="btn myBtn m-2">Make an Offer</a>
+									</div>
+								<?php } ?>
+
+								<?php if(!isset($_SESSION['current_user'])){ ?>
+									<div class="card-footer d-flex justify-content-center align-items-center">
+									<a href="https://wa.me/<?php echo $this_user['phone']?>" class="btn myBtn m-2">Make an Offer</a>
+									</div>
+								<?php } ?>
 							</div>
 						</div>
 					</div>
