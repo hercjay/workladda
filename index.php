@@ -180,7 +180,7 @@
 		<div class="scroll-horizontal row  flex-nowrap justify-content-center">
 			<div class="col-12">
 				<div class="card p-4">
-					<form method="post" action="#">
+					<form method="post" action="search_freelancer">
 
 							<div class="form-group" id="service_type">
 								<label for="service_type">What type of service do you need?</label>
@@ -209,7 +209,7 @@
 									?>
 								</select>
 							</div>
-						<button  class="btn myBtn" >Find Freelancer</button> 
+						<button  class="btn myBtn" type="submit" >Find Freelancer</button> 
 						<!-- <button type="submit" class="btn myBtn" name="login">Find Freelancer</button>  -->
 					</form>
 				</div>

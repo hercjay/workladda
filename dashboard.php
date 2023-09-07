@@ -41,14 +41,14 @@
 
 					<div class="col-lg-4 col-md-5  shadowCard p-4 m-2">
 						<img src="images/profile_view.svg" class="img-fluid mb-4 p-2">
-						Number of Profile views in the past 30 days: <h3><strong>487</strong></h3>
-						Total number of Profile views: <h3><strong>8945</strong></h3>
+						Number of Profile views in the past 30 days: <h3><strong><?php echo $_SESSION['current_user']['profile_views'] ?></strong></h3>
+						Total number of Profile views: <h3><strong><?php echo $_SESSION['current_user']['profile_views'] ?></strong></h3>
 					</div>
 
 					<div class="col-lg-4 col-md-5  shadowCard p-4 m-2">
 						<img src="images/deal2.svg" class="img-fluid mb-4 p-2">
-						Number of gigs successfully completed in the past 30 days: <h3><strong>267</strong></h3>
-						Total number of gigs successfully completed: <h3><strong>9856</strong></h3>
+						Number of gigs successfully completed in the past 30 days: <h3><strong><?php echo $_SESSION['current_user']['jobs_completed'] ?></strong></h3>
+						Total number of gigs successfully completed: <h3><strong><?php echo $_SESSION['current_user']['profile_views'] ?></strong></h3>
 					</div>
 
 
@@ -114,7 +114,7 @@
 
 								<div class="form-group" id="password">
 									<label for="password">Enter your Password:</label>
-									<input  id="password" type="text" class="form-control " name="password" required>
+									<input  id="password" type="passport" class="form-control " name="password" required>
 								</div>
 
 								<button type="submit" name="submit" class="btn myBtn">Update Payment Details</button>

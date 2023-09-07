@@ -82,6 +82,12 @@
 			$st->execute(['id'=>$this_user['service_type']]);
 			$service_type = $st->fetch();
 			$this_user['service_type_text'] = $service_type['title'];
+		
+			//increase the profile_views value of the viewed user in database
+			$profile_views = $this_user['profile_views'] + 1;
+			$st = $conn->prepare("UPDATE users SET profile_views = :profile_views WHERE id = :id");	
+			$st->execute(['profile_views'=>$profile_views, 'id'=>$id]);
+
 	  }
 	  catch(PDOException $e){
 		  echo "There was a problem while trying to obtain profile view user details: ".$e->getMessage();
@@ -114,6 +120,9 @@
 		catch(PDOException $e){
 			echo "There was a problem while trying to obtain blog posts: ".$e->getMessage();
 		}
+
+		
+		
 
 
           $pdo->close();
@@ -149,15 +158,15 @@
 										<div class="d-flex justify-content-center rounded-3 p-2 mb-2" style="background-color: #efefef;">
 											<div>
 												<p class="small text-muted mb-1">Jobs Completed</p>
-												<p class="mb-0">76</p>
+												<p class="mb-0"><?php echo $this_user['jobs_completed'] ?></p>
 											</div>
 											<div class="px-3">
 												<p class="small text-muted mb-1">Profile Views</p>
-												<p class="mb-0">976</p>
+												<p class="mb-0"><?php echo $this_user['profile_views'] ?></p>
 											</div>
 												<div>
 													<p class="small text-muted mb-1">Rating</p>
-													<p class="mb-0">9.0</p>
+													<p class="mb-0"><?php echo $this_user['rating'] ?></p>
 												</div>
 											</div>
 									</div>
