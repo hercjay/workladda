@@ -66,7 +66,7 @@
                     $city = clean($_POST['city']);
                     //check msql users table for users with matching service_type, and city if city is not null
                     $conn = $pdo->open();
-                    if($city != "") {
+                    if($city != "0") {
                         //left join service_types table title field as service_type_text and anambra_towns table title field as town
                         $stmt = $conn->prepare("SELECT users.*, service_types.title as service_type_text, anambra_towns.title as town FROM users LEFT JOIN service_types ON users.service_type=service_types.id LEFT JOIN anambra_towns ON users.city=anambra_towns.id WHERE service_type=:service_type AND city=:city");
                         $stmt->execute(['service_type'=>$service_type, 'city'=>$city]);
@@ -109,15 +109,15 @@
                                             <p class="mb-0"><?php echo $r['rating'] ?></p>
                                         </div>
                                     </div>
-                                    <?php if(isset($_SESSION['current_user']) &&  $this_user['id'] !=  $_SESSION['current_user']['id']){ ?>
+                                    <?php if(isset($_SESSION['current_user']) &&  $r['id'] !=  $_SESSION['current_user']['id']){ ?>
                                         <div class="card-footer d-flex justify-content-center align-items-center">
-                                        <a href="https://wa.me/<?php echo $this_user['phone']?>" class="btn myBtn m-2">Make an Offer</a>
+                                        <a href="https://wa.me/<?php echo $_REQUEST['phone']?>" class="btn myBtn m-2">Make an Offer</a>
                                         </div>
                                     <?php } ?>
 
                                     <?php if(!isset($_SESSION['current_user'])){ ?>
                                         <div class="card-footer d-flex justify-content-center align-items-center">
-                                        <a href="https://wa.me/<?php echo $this_user['phone']?>" class="btn myBtn m-2">Make an Offer</a>
+                                        <a href="https://wa.me/<?php echo $r['phone']?>" class="btn myBtn m-2">Make an Offer</a>
                                         </div>
                                     <?php } ?>
                                 </div>

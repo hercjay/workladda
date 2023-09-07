@@ -199,7 +199,7 @@
 							<div class="form-group" id="state">
 								<label for="city">If the required service cannot be rendered online, please select the location closest to you </label><small>(optional)</small>
 								<select  id="city" type="city" class="form-control " name="city" >
-									<option value=""><----Select a Value----></option>
+									<option value="0"><----Select a Value----></option>
 									<?php
 										foreach($anambra_towns as $c){
 											echo '
