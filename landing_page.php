@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="plugins/bootstrap-4.0.0-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    
     <title>WorkLadda - Product Page</title>
 
     <style>
@@ -156,7 +157,7 @@
 
                 <div class="shadowCard row justify-content-center p-4">
                     <div class="col-11 m-2 col-lg-11">
-                        <img src="images/dashboard_wide.PNG" alt="Find a Freelancer" width="100%" height="auto">
+                        <img src="images/dashboard-wide.PNG" alt="Find a Freelancer" width="100%" height="auto">
                     </div>
                     <div class="col-11 m-2 col-lg-11 justify-content-center my-auto">
                         <h2 style="text-align: center"><strong>Inspired by a Great Need!</strong></h2>
@@ -170,50 +171,52 @@
 
                     <br/><br/>  <br/>
                     
-                    <h2>Connect with me:</h2>
-
+                    <h5 >Connect with me:</h2> 
                         <!-- Facebook -->
-                        <a class="btn btn-primary" style="background-color: #3b5998;" href="https://facebook.com/hercjay" role="button"
+                        <a class="btn btn-primary m-1 col-1" style="background-color: #3b5998;" href="https://facebook.com/hercjay" role="button"
                         ><i class="fab fa-facebook-f"></i
                         ></a>
 
                         <!-- Twitter -->
-                        <a class="btn btn-primary" style="background-color: #55acee;" href="https://twitter.com/hercjay" role="button"
+                        <a class="btn btn-primary  m-1 col-1" style="background-color: #55acee;" href="https://twitter.com/hercjay" role="button"
                         ><i class="fab fa-twitter"></i
                         ></a>
 
                         <!-- Linkedin -->
-                        <a class="btn btn-primary" style="background-color: #0082ca;" href="https://linkedin.com/in/michael-anokwulu" role="button"
+                        <a class="btn btn-primary  m-1 col-1" style="background-color: #0082ca;" href="https://linkedin.com/in/michael-anokwulu" role="button"
                         ><i class="fab fa-linkedin-in"></i
                         ></a>
 
                         <!-- Youtube -->
-                        <a class="btn btn-primary" style="background-color: #ed302f;" href="https://youtube.com/hercjaytech" role="button"
+                        <!-- <a class="btn btn-primary m-1 col-1" style="background-color: #ed302f;" href="https://youtube.com/hercjaytech" role="button"
                         ><i class="fab fa-youtube"></i
-                        ></a>
+                        ></a> -->
 
                         <!-- Github -->
-                        <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/hercjay" role="button"
+                        <a class="btn btn-primary m-1 col-1" style="background-color: #333333;" href="https://github.com/hercjay" role="button"
                         ><i class="fab fa-github"></i
                         ></a>
 
                         <!-- Whatsapp -->
-                        <a class="btn btn-primary" style="background-color: #25d366;" href="https://wa.me/+2348163880303" role="button"
+                        <a class="btn btn-primary m-1 col-1" style="background-color: #25d366;" href="https://wa.me/+2348163880303" role="button"
                         ><i class="fab fa-whatsapp"></i
                         ></a>
 
-
-                    <h2>Below is the Github repo of the project</h2>
-                    <!-- Github -->
-                    <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/hercjay/workladda/tree/master" role="button"
-                        ><i class="fab fa-github"></i
+                        <h5>Here is the Github repo of the project</>
+                        <!-- Github -->
+                        <a class="btn btn-primary m-1 col-1 px-4" style="background-color: #333333;" href="https://github.com/hercjay/workladda/tree/master" role="button"
+                            ><i class="fab fa-github"></i
                         ></a>
+
+                    </div>
+                    
                 </div>
             </div>
         </div>
 </div>
 
 <?php //include 'bottom_nav/bottom_nav.php'; ?>
+<script src="https://kit.fontawesome.com/999cf91a7d.js" crossorigin="anonymous"></script>
 	<?php include 'includes/scripts.php'; ?>
 
 </body>
