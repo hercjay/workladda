@@ -6,11 +6,20 @@ WorkLadda is a freelancing platform designed to connect freelancers offering dig
 [Temporary Link to WorkLadda Website](http://workladda.epizy.com)
 
 ## Table of Contents
+- Screenshots(#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Related Projects](#related-projects)
 - [License](#license)
+
+## Screenshots
+
+![Uploading blog.PNG…]()
+![create_account](https://github.com/hercjay/workladda/assets/112480000/5d88ddcd-9348-4da9-8e56-ed498bfb48dd)
+![dashboard-wide](https://github.com/hercjay/workladda/assets/112480000/880cf188-0566-4011-b317-9b3e6dba3cca)
+![findFreelancer](https://github.com/hercjay/workladda/assets/112480000/b5c49bdc-e023-4e11-bc76-c1be1ba8b635)
+
 
 ## Installation
 
@@ -57,3 +66,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Blog Article
 
 Read more about the inspiration and development of WorkLadda in our [blog article] (  ).
+
+
