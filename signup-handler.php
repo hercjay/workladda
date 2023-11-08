@@ -96,4 +96,8 @@
 			}
 			
         }
+    } else {
+        $_SESSION['error'] =  "Complete the signup form first";
+        header('location: signup.php');
     }
+?>
