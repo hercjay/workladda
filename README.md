@@ -15,10 +15,16 @@ WorkLadda is a freelancing platform designed to connect freelancers offering dig
 
 ## Screenshots
 
-![Uploading blog.PNG…]()
 ![create_account](https://github.com/hercjay/workladda/assets/112480000/5d88ddcd-9348-4da9-8e56-ed498bfb48dd)
 ![dashboard-wide](https://github.com/hercjay/workladda/assets/112480000/880cf188-0566-4011-b317-9b3e6dba3cca)
 ![findFreelancer](https://github.com/hercjay/workladda/assets/112480000/b5c49bdc-e023-4e11-bc76-c1be1ba8b635)
+![image](https://github.com/hercjay/workladda/assets/112480000/ed2abbfd-fb13-4ff9-9245-5e774c156b0f)
+![image](https://github.com/hercjay/workladda/assets/112480000/aa5fc025-95cb-4ef7-be5a-f7aaaf865aca)
+![image](https://github.com/hercjay/workladda/assets/112480000/fb8519aa-ed61-4ba4-99e4-a568c2283d7f)
+![image](https://github.com/hercjay/workladda/assets/112480000/aad8721b-7d6a-474a-a5cc-3af4286225ad)
+
+
+
 
 
 ## Installation
@@ -65,6 +71,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Blog Article
 
-Read more about the inspiration and development of WorkLadda in our [blog article] (  ).
+Read more about the inspiration and development of WorkLadda in our [blog article] ( https://medium.com/@iamhercjay/introducing-workladda-simplifying-local-freelancing-in-anambra-state-c395ecd3fbb ).
 
 
