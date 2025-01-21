@@ -66,8 +66,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - Michael Anokwulu
 - LinkedIn: ( https://www.linkedin.com/in/michael-anokwulu )
 - GitHub: ( https://github.com/hercjay )
-- TikTok: @hercjay
-- Twitter: @hercjay
+- TikTok: ( https://tiktok.com/hercjay_tech )
+- Twitter: ( https://x.com/hercjay )
 
 ## Blog Article
 
